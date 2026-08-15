@@ -185,6 +185,13 @@
   .store-col ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--text-secondary); }
   .store-col li { margin-bottom: 6px; }
 
+  /* ---------- Forschungsfragen table ---------- */
+  table.ff { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  table.ff th, table.ff td { padding: 14px 16px; border-bottom: 1px solid var(--gridline); text-align: left; vertical-align: top; line-height: 1.5; }
+  table.ff th { color: var(--text-muted); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.02em; background: var(--surface-1); }
+  table.ff td.ff-title { font-weight: 700; color: var(--text-primary); white-space: nowrap; }
+  table.ff td { color: var(--text-secondary); }
+
   /* ---------- data tables (Rohdaten) ---------- */
   .data-block { margin-bottom: 44px; }
   .data-block h3 { font-size: 16px; margin: 0 0 4px; }
@@ -387,8 +394,43 @@
           <p class="store-caption">US-Store</p>
           <ul>
             <li>Gedeckte Farbwelt</li>
+            <li>Gefühl von Corporate Store</li>
+            <li>Fokus auf Kleidung</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section class="block" id="forschungsfragen">
+      <h2 class="section-title">Forschungsfragen</h2>
+
+      <div class="table-wrap">
+        <table class="ff">
+          <thead>
+            <tr>
+              <th style="width:18%">Nr. &amp; Titel</th>
+              <th style="width:42%">Frage</th>
+              <th style="width:40%">Dimensionen &amp; Metriken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ff-title">FF1<br>Akquisition &amp; Wert</td>
+              <td>Welchen Beitrag leisten die verschiedenen Akquisitionskanäle zur Gewinnung neuer Nutzer, und wie unterscheiden sie sich hinsichtlich des erzeugten wirtschaftlichen Wertes?</td>
+              <td><strong>Dimension:</strong> First User Channel Group<br><strong>Metriken:</strong> Nutzer, Käufe, Umsatz, Key Event Rate</td>
+            </tr>
+            <tr>
+              <td class="ff-title">FF2<br>Engagement</td>
+              <td>Wie unterscheiden sich die Trafficquellen hinsichtlich Engagement und Absprungrate, und welche Kanäle führen zu einer besonders intensiven Seitennutzung?</td>
+              <td><strong>Dimension:</strong> Session Channel Group<br><strong>Metriken:</strong> Engagement Rate, Bounce Rate, Zeit, Events, Views</td>
+            </tr>
+            <tr>
+              <td class="ff-title">FF3<br>Navigation</td>
+              <td>Wie unterscheiden sich die Einstiegsseiten und Navigationspfade der Nutzer in Abhängigkeit von der Traffic-Quelle?</td>
+              <td><strong>Dimension:</strong> Sessionsegmente und Pfadexploration<br><strong>Metriken:</strong> Landingpages, Seitenpfade, Total Users</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
