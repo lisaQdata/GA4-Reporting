@@ -229,6 +229,9 @@
   .bar-fill { position: absolute; left: 0; top: 0; height: 24px; border-radius: 0 4px 4px 0; }
   .bar-value { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--text-primary); white-space: nowrap; }
 
+  /* ---------- FF2 scatter plot ---------- */
+  .scatter-svg { width: 100%; max-width: 680px; height: auto; display: block; }
+
   /* ---------- data tables (Rohdaten) ---------- */
   .data-block { margin-bottom: 44px; }
   .data-block h3 { font-size: 16px; margin: 0 0 4px; }
@@ -521,6 +524,89 @@
         <div class="bar-row"><div class="bar-label">Email</div><div class="bar-track"><div class="bar-fill" style="width:0.8%;background:var(--ch-email)"></div></div><div class="bar-value">2.960,16&nbsp;$</div></div>
         <div class="bar-row"><div class="bar-label">Organic Shopping</div><div class="bar-track"><div class="bar-fill" style="width:0.3%;background:var(--ch-shopping)"></div></div><div class="bar-value">1.315,45&nbsp;$</div></div>
         <div class="bar-row"><div class="bar-label">Organic Video</div><div class="bar-track"><div class="bar-fill" style="width:0.03%;background:var(--ch-other)"></div></div><div class="bar-value">100,94&nbsp;$</div></div>
+      </div>
+    </section>
+
+    <section class="block" id="ff2-engagement">
+      <h2 class="section-title">Forschungsfrage 2: Engagement und Nutzungsintensität</h2>
+
+      <div class="chart-block">
+        <p class="chart-title">Reichweite und Nutzungsintensität nach Akquisitionskanal</p>
+        <p class="chart-caption">GA4-Sitzungsdaten des Google Merchandise Store, 01.04.–30.06.2026. Nutzungsintensität = Mittelwert der Verhältnisse von Engagement Rate, Ø Engagement-Zeit, Events/Sitzung und Views/Sitzung zum jeweiligen Gesamtwert (Quelle: Abbildung 17). Schwelle „hohe Reichweite" bei ≥ 5&nbsp;% aller Sitzungen. Punktgröße = Anzahl der Sitzungen. Unassigned, Email und Organic Video sind wegen geringer Fallzahl bzw. eingeschränkter Zuordenbarkeit nicht dargestellt.</p>
+
+        <svg class="scatter-svg" viewBox="0 0 680 410" role="img" aria-label="Streudiagramm: Reichweite und Nutzungsintensität nach Kanal">
+          <rect x="70" y="30" width="580" height="320" fill="var(--surface-1)" stroke="var(--border)"/>
+
+          <line x1="70.0" y1="350" x2="70.0" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="70.0" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">0&nbsp;%</text>
+          <line x1="152.9" y1="350" x2="152.9" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="152.9" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">10&nbsp;%</text>
+          <line x1="235.7" y1="350" x2="235.7" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="235.7" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">20&nbsp;%</text>
+          <line x1="318.6" y1="350" x2="318.6" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="318.6" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">30&nbsp;%</text>
+          <line x1="401.4" y1="350" x2="401.4" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="401.4" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">40&nbsp;%</text>
+          <line x1="484.3" y1="350" x2="484.3" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="484.3" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">50&nbsp;%</text>
+          <line x1="567.1" y1="350" x2="567.1" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="567.1" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">60&nbsp;%</text>
+          <line x1="650.0" y1="350" x2="650.0" y2="30" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="650.0" y="368" font-size="10.5" fill="var(--text-muted)" text-anchor="middle">70&nbsp;%</text>
+
+          <line x1="70" y1="350.0" x2="650" y2="350.0" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="60" y="353.5" font-size="10.5" fill="var(--text-muted)" text-anchor="end">0</text>
+          <line x1="70" y1="280.4" x2="650" y2="280.4" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="60" y="283.9" font-size="10.5" fill="var(--text-muted)" text-anchor="end">0,5</text>
+          <line x1="70" y1="210.9" x2="650" y2="210.9" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="60" y="214.4" font-size="10.5" fill="var(--text-muted)" text-anchor="end">1,0</text>
+          <line x1="70" y1="141.3" x2="650" y2="141.3" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="60" y="144.8" font-size="10.5" fill="var(--text-muted)" text-anchor="end">1,5</text>
+          <line x1="70" y1="71.7" x2="650" y2="71.7" stroke="var(--gridline)" stroke-width="1"/>
+          <text x="60" y="75.2" font-size="10.5" fill="var(--text-muted)" text-anchor="end">2,0</text>
+
+          <line x1="111.4" y1="350" x2="111.4" y2="30" stroke="var(--text-muted)" stroke-width="1.3" stroke-dasharray="4,4"/>
+          <line x1="70" y1="210.9" x2="650" y2="210.9" stroke="var(--text-muted)" stroke-width="1.3" stroke-dasharray="4,4"/>
+
+          <text x="78" y="46" font-size="10.5" font-style="italic" fill="var(--text-muted)">Geringe Reichweite / Hohe Intensität</text>
+          <text x="642" y="46" font-size="10.5" font-style="italic" fill="var(--text-muted)" text-anchor="end">Hohe Reichweite / Hohe Intensität</text>
+          <text x="78" y="342" font-size="10.5" font-style="italic" fill="var(--text-muted)">Geringe Reichweite / Geringe Intensität</text>
+          <text x="642" y="342" font-size="10.5" font-style="italic" fill="var(--text-muted)" text-anchor="end">Hohe Reichweite / Geringe Intensität</text>
+
+          <circle cx="102.8" cy="56.6" r="14.1" fill="var(--ch-cross)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+          <circle cx="101.6" cy="142.9" r="13.9" fill="var(--ch-paid)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+          <circle cx="86.5" cy="71.0" r="12.2" fill="var(--ch-referral)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+          <circle cx="78.5" cy="162.9" r="10.8" fill="var(--ch-social)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+          <circle cx="71.7" cy="120.3" r="9.0" fill="var(--ch-shopping)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+          <circle cx="229.6" cy="154.5" r="22.0" fill="var(--ch-organic)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+          <circle cx="603.7" cy="250.3" r="34.0" fill="var(--ch-direct)" fill-opacity="0.88" stroke="var(--surface-1)" stroke-width="2"/>
+
+          <line x1="102.8" y1="56.6" x2="114" y2="44" stroke="var(--baseline)" stroke-width="1"/>
+          <circle cx="120" cy="44" r="4" fill="var(--ch-cross)"/>
+          <text x="130" y="47.5" font-size="11" font-weight="700" fill="var(--text-primary)">Cross-network</text>
+
+          <line x1="86.5" y1="71.0" x2="114" y2="67" stroke="var(--baseline)" stroke-width="1"/>
+          <circle cx="120" cy="67" r="4" fill="var(--ch-referral)"/>
+          <text x="130" y="70.5" font-size="11" font-weight="700" fill="var(--text-primary)">Referral</text>
+
+          <line x1="71.7" y1="120.3" x2="114" y2="90" stroke="var(--baseline)" stroke-width="1"/>
+          <circle cx="120" cy="90" r="4" fill="var(--ch-shopping)"/>
+          <text x="130" y="93.5" font-size="11" font-weight="700" fill="var(--text-primary)">Organic Shopping</text>
+
+          <line x1="101.6" y1="142.9" x2="114" y2="113" stroke="var(--baseline)" stroke-width="1"/>
+          <circle cx="120" cy="113" r="4" fill="var(--ch-paid)"/>
+          <text x="130" y="116.5" font-size="11" font-weight="700" fill="var(--text-primary)">Paid Search</text>
+
+          <line x1="78.5" y1="162.9" x2="114" y2="136" stroke="var(--baseline)" stroke-width="1"/>
+          <circle cx="120" cy="136" r="4" fill="var(--ch-social)"/>
+          <text x="130" y="139.5" font-size="11" font-weight="700" fill="var(--text-primary)">Organic Social</text>
+
+          <text x="259.6" y="152.5" font-size="12.5" font-weight="700" fill="var(--text-primary)">Organic Search</text>
+          <text x="603.7" y="206.3" font-size="12.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">Direct</text>
+
+          <text x="360" y="393" font-size="12" fill="var(--text-secondary)" text-anchor="middle">Anteil an allen Sitzungen</text>
+          <text x="20" y="190" font-size="12" fill="var(--text-secondary)" text-anchor="middle" transform="rotate(-90 20 190)">Nutzungsintensität im Verhältnis zum Gesamtwert</text>
+        </svg>
       </div>
     </section>
 
