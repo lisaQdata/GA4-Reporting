@@ -213,18 +213,20 @@
   .chart-caption { font-size: 12.5px; color: var(--text-muted); margin: 0 0 22px; }
 
   .pie-layout { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
-  .pie-svg { flex-shrink: 0; width: 260px; height: 260px; }
-  .pie-slice-label { font-size: 13px; font-weight: 700; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
-  .pie-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; font-size: 13.5px; flex: 1; min-width: 260px; }
+  .pie-svg { flex-shrink: 0; width: 300px; height: 300px; }
+  .pie-slice-label { font-size: 14px; font-weight: 700; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
+  .pie-outer-label { font-size: 12.5px; font-weight: 700; fill: var(--text-primary); }
+  .pie-leader { stroke: var(--baseline); stroke-width: 1.2; }
+  .pie-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 13.5px; align-self: center; }
   .pie-legend li { display: flex; align-items: baseline; gap: 10px; }
   .pie-swatch { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; display: inline-block; transform: translateY(-1px); }
-  .pie-legend .pl-name { flex: 1; color: var(--text-primary); }
+  .pie-legend .pl-name { color: var(--text-primary); min-width: 130px; }
   .pie-legend .pl-value { color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
-  .bar-row { display: grid; grid-template-columns: 140px 1fr 108px; align-items: center; column-gap: 14px; margin-bottom: 9px; }
+  .bar-row { display: grid; grid-template-columns: 140px 1fr 108px; align-items: center; column-gap: 14px; margin-bottom: 13px; }
   .bar-label { font-size: 13px; color: var(--text-secondary); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .bar-track { position: relative; height: 18px; }
-  .bar-fill { position: absolute; left: 0; top: 0; height: 18px; border-radius: 0 4px 4px 0; }
+  .bar-track { position: relative; height: 24px; }
+  .bar-fill { position: absolute; left: 0; top: 0; height: 24px; border-radius: 0 4px 4px 0; }
   .bar-value { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--text-primary); white-space: nowrap; }
 
   /* ---------- data tables (Rohdaten) ---------- */
@@ -476,21 +478,24 @@
 
       <div class="chart-block">
         <p class="chart-title">Anteil an neuen Nutzern nach Erstakquisitionskanal</p>
-        <p class="chart-caption">Neue Nutzer je Kanal, absolut und in Prozent. Quelle: Tabelle 4 (Summe: 233.126 neue Nutzer).</p>
+        <p class="chart-caption">Neue Nutzer je Kanal, absolut und in Prozent. Die vier größten Kanäle einzeln, der Rest als „Sonstige" zusammengefasst (Aufschlüsselung: Tabelle 4 im Rohdaten-Tab). Quelle: Tabelle 4 (Summe: 233.126 neue Nutzer).</p>
 
         <div class="pie-layout">
-          <svg class="pie-svg" viewBox="0 0 260 260" role="img" aria-label="Kreisdiagramm: Anteil an neuen Nutzern nach Kanal">
-            <path d="M130,130 L130.00,20.00 A110,110 0 1,1 20.02,127.78 Z" fill="var(--ch-direct)"/>
-            <path d="M130,130 L20.02,127.78 A110,110 0 0,1 70.83,37.27 Z" fill="var(--ch-organic)"/>
-            <path d="M130,130 L70.83,37.27 A110,110 0 0,1 95.53,25.54 Z" fill="var(--ch-cross)"/>
-            <path d="M130,130 L95.53,25.54 A110,110 0 0,1 115.72,20.93 Z" fill="var(--ch-paid)"/>
-            <path d="M130,130 L115.72,20.93 A110,110 0 0,1 122.43,20.26 Z" fill="var(--ch-referral)"/>
-            <path d="M130,130 L122.43,20.26 A110,110 0 0,1 128.55,20.01 Z" fill="var(--ch-social)"/>
-            <path d="M130,130 L128.55,20.01 A110,110 0 0,1 129.76,20.00 Z" fill="var(--ch-shopping)"/>
-            <path d="M130,130 L129.76,20.00 A110,110 0 0,1 129.93,20.00 Z" fill="var(--ch-email)"/>
-            <path d="M130,130 L129.93,20.00 A110,110 0 0,1 130.00,20.00 Z" fill="var(--ch-other)"/>
-            <text class="pie-slice-label" x="177.6" y="178.6">75,3&nbsp;%</text>
-            <text class="pie-slice-label" x="49.8" y="85.0">15,6&nbsp;%</text>
+          <svg class="pie-svg" viewBox="0 0 370 370" role="img" aria-label="Kreisdiagramm: Anteil an neuen Nutzern nach Kanal">
+            <path d="M185,185 L185.00,35.00 A150,150 0 1,1 35.03,181.97 Z" fill="var(--ch-direct)"/>
+            <path d="M185,185 L35.03,181.97 A150,150 0 0,1 104.32,58.55 Z" fill="var(--ch-organic)"/>
+            <path d="M185,185 L104.32,58.55 A150,150 0 0,1 138.00,42.55 Z" fill="var(--ch-cross)"/>
+            <path d="M185,185 L138.00,42.55 A150,150 0 0,1 165.53,36.27 Z" fill="var(--ch-paid)"/>
+            <path d="M185,185 L165.53,36.27 A150,150 0 0,1 185.00,35.00 Z" fill="var(--ch-other)"/>
+
+            <text class="pie-slice-label" x="250.1" y="251.4">75,3&nbsp;%</text>
+            <text class="pie-slice-label" x="103.9" y="139.5">15,6&nbsp;%</text>
+
+            <line class="pie-leader" x1="120.7" y1="49.5" x2="113.8" y2="35.0"/>
+            <text class="pie-outer-label" x="112.1" y="31.4" text-anchor="end">Cross-network 4,0&nbsp;%</text>
+
+            <line class="pie-leader" x1="151.6" y1="38.8" x2="148.1" y2="23.2"/>
+            <text class="pie-outer-label" x="147.2" y="19.3" text-anchor="end">Paid Search 3,0&nbsp;%</text>
           </svg>
 
           <ul class="pie-legend">
@@ -498,11 +503,7 @@
             <li><span class="pie-swatch" style="background:var(--ch-organic)"></span><span class="pl-name">Organic Search</span><span class="pl-value">36.461 (15,6&nbsp;%)</span></li>
             <li><span class="pie-swatch" style="background:var(--ch-cross)"></span><span class="pl-name">Cross-network</span><span class="pl-value">9.246 (4,0&nbsp;%)</span></li>
             <li><span class="pie-swatch" style="background:var(--ch-paid)"></span><span class="pl-name">Paid Search</span><span class="pl-value">6.996 (3,0&nbsp;%)</span></li>
-            <li><span class="pie-swatch" style="background:var(--ch-referral)"></span><span class="pl-name">Referral</span><span class="pl-value">2.273 (1,0&nbsp;%)</span></li>
-            <li><span class="pie-swatch" style="background:var(--ch-social)"></span><span class="pl-name">Organic Social</span><span class="pl-value">2.068 (0,9&nbsp;%)</span></li>
-            <li><span class="pie-swatch" style="background:var(--ch-shopping)"></span><span class="pl-name">Organic Shopping</span><span class="pl-value">408 (0,2&nbsp;%)</span></li>
-            <li><span class="pie-swatch" style="background:var(--ch-email)"></span><span class="pl-name">Email</span><span class="pl-value">55 (0,0&nbsp;%)</span></li>
-            <li><span class="pie-swatch" style="background:var(--ch-other)"></span><span class="pl-name">Organic Video</span><span class="pl-value">25 (0,0&nbsp;%)</span></li>
+            <li><span class="pie-swatch" style="background:var(--ch-other)"></span><span class="pl-name">Sonstige</span><span class="pl-value">4.829 (2,1&nbsp;%)</span></li>
           </ul>
         </div>
       </div>
