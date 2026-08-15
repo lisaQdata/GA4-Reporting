@@ -181,6 +181,20 @@
   /* ---------- Untersuchungsobjekt: store comparison ---------- */
   .store-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
   .store-col img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--border); }
+  .zoomable { cursor: zoom-in; }
+
+  /* ---------- image lightbox ---------- */
+  .lightbox-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(11, 11, 11, 0.85);
+    align-items: center; justify-content: center;
+    padding: 48px;
+    z-index: 1000;
+    cursor: zoom-out;
+  }
+  .lightbox-overlay.active { display: flex; }
+  .lightbox-overlay img { max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); }
   .store-caption { text-align: center; font-size: 14px; font-weight: 700; margin: 14px 0 12px; }
   .store-col ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--text-secondary); }
   .store-col li { margin-bottom: 6px; }
@@ -381,7 +395,7 @@
 
       <div class="store-compare">
         <div class="store-col">
-          <img src="Screenshots/eu-store.png" alt="Startseite des Google Merchandise Store, EU-Store">
+          <img class="zoomable" src="Screenshots/eu-store.png" alt="Startseite des Google Merchandise Store, EU-Store">
           <p class="store-caption">EU-Store</p>
           <ul>
             <li>Helle und vielfältige Farben</li>
@@ -390,7 +404,7 @@
           </ul>
         </div>
         <div class="store-col">
-          <img src="Screenshots/us-store.png" alt="Startseite des Google Merchandise Store, US-Store">
+          <img class="zoomable" src="Screenshots/us-store.png" alt="Startseite des Google Merchandise Store, US-Store">
           <p class="store-caption">US-Store</p>
           <ul>
             <li>Gedeckte Farbwelt</li>
@@ -572,6 +586,10 @@
 
 </div>
 
+<div class="lightbox-overlay" id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
 <script>
   document.querySelectorAll('.tab-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -581,6 +599,27 @@
       btn.setAttribute('aria-selected', 'true');
       document.getElementById(btn.dataset.tab).classList.add('active');
     });
+  });
+
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+
+  document.querySelectorAll('.zoomable').forEach(function (img) {
+    img.addEventListener('click', function () {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('active');
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+  }
+
+  lightbox.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
   });
 </script>
 </body>
