@@ -253,6 +253,10 @@
   }
   .pending-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-muted); flex-shrink: 0; }
 
+  table.data tr.cat-row td { font-weight: 700; background: var(--surface-1); }
+  table.data tr.detail-row td:first-child { padding-left: 28px; color: var(--text-secondary); font-weight: 400; }
+  .cat-tag { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em; color: var(--text-muted); margin-left: 8px; }
+
   footer.page-footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--text-muted); }
 
   @media (max-width: 720px) {
@@ -744,6 +748,53 @@
     </div>
 
     <div class="data-block">
+      <h3>Abbildung 19 — Landingpages nach Kanal: Direct</h3>
+      <p class="data-source">Quelle: GA4 explorative Analyse. Seitentiefe: „/“ und „(not set)“ = 0, je weiteres Pfadsegment +1. Top&nbsp;10 nach Sessions, keine Kategorie tritt hier mehrfach auf.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Landingpage</th><th>Seitentiefe</th><th>Sessions</th></tr></thead>
+          <tbody>
+            <tr><td style="text-align:left">/</td><td>0</td><td>172.016</td></tr>
+            <tr><td style="text-align:left">(not set)</td><td>0</td><td>44.002</td></tr>
+            <tr><td style="text-align:left">/shop/family-day</td><td>2</td><td>5.529</td></tr>
+            <tr><td style="text-align:left">/shop/new</td><td>2</td><td>4.054</td></tr>
+            <tr><td style="text-align:left">/shop/collections/emoji</td><td>3</td><td>986</td></tr>
+            <tr><td style="text-align:left">/checkout</td><td>1</td><td>941</td></tr>
+            <tr><td style="text-align:left">/shop/apparel/mens</td><td>3</td><td>933</td></tr>
+            <tr><td style="text-align:left">/account</td><td>1</td><td>853</td></tr>
+            <tr><td style="text-align:left">/canada</td><td>1</td><td>842</td></tr>
+            <tr><td style="text-align:left">/shop/clearance</td><td>2</td><td>756</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="data-block">
+      <h3>Abbildung 20 — Landingpages nach Kanal: Organic Search</h3>
+      <p class="data-source">Quelle: GA4 explorative Analyse. Seitentiefe: „/“ und „(not set)“ = 0, je weiteres Pfadsegment +1. Top&nbsp;10 nach Sessions, mehrfach auftretende Kategorien (Lifestyle, Apparel, Shop by Brand) aggregiert mit Detailseiten darunter.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Landingpage</th><th>Seitentiefe</th><th>Sessions</th></tr></thead>
+          <tbody>
+            <tr><td style="text-align:left">(not set)</td><td>0</td><td>33.935</td></tr>
+            <tr><td style="text-align:left">/</td><td>0</td><td>26.030</td></tr>
+            <tr class="cat-row"><td style="text-align:left">Lifestyle <span class="cat-tag">Kategorie</span></td><td>—</td><td>5.274</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/lifestyle/bags</td><td>3</td><td>3.672</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/lifestyle/drinkware</td><td>3</td><td>1.602</td></tr>
+            <tr class="cat-row"><td style="text-align:left">Apparel <span class="cat-tag">Kategorie</span></td><td>—</td><td>3.471</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/apparel</td><td>2</td><td>1.863</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/apparel/mens</td><td>3</td><td>805</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/apparel/headgear</td><td>3</td><td>803</td></tr>
+            <tr class="cat-row"><td style="text-align:left">Shop by Brand <span class="cat-tag">Kategorie</span></td><td>—</td><td>2.849</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/shop-by-brand/youtube</td><td>3</td><td>1.815</td></tr>
+            <tr class="detail-row"><td style="text-align:left">/shop/shop-by-brand/android</td><td>3</td><td>1.034</td></tr>
+            <tr><td style="text-align:left">/shop/new</td><td>2</td><td>1.316</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="data-block">
       <h3>Noch ausstehende Rohdaten</h3>
       <p class="data-source">Diese Abbildungen liegen im Quellmaterial nur als Grafik vor — sobald der jeweilige Screenshot vorliegt, wird die Tabelle hier ergänzt.</p>
       <div class="pending-list">
@@ -751,7 +802,7 @@
         <div class="pending-item"><span class="pending-tag">Abb. 9</span> Sessions nach primary channel group — Gesamtverteilung</div>
         <div class="pending-item"><span class="pending-tag">Abb. 13–14</span> Key Event Rate und Event-Aufsplittung nach Kanal</div>
         <div class="pending-item"><span class="pending-tag">Abb. 15–16</span> Session Source / Medium je Kanal (Detailaufschlüsselung)</div>
-        <div class="pending-item"><span class="pending-tag">Abb. 19–21</span> Landingpages nach Kanal (Direct / Organic Search / Referral)</div>
+        <div class="pending-item"><span class="pending-tag">Abb. 21</span> Landingpages nach Kanal (Referral)</div>
         <div class="pending-item"><span class="pending-tag">Abb. 22, 24</span> Pfadanalyse (Step-by-Step) für Direct und Organic Traffic</div>
       </div>
     </div>
