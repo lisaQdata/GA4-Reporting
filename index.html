@@ -250,6 +250,13 @@
   .fazit-box { background: rgba(42,120,214,0.06); border: 1px solid rgba(42,120,214,0.25); border-radius: 10px; padding: 24px 28px; }
   .fazit-box .fazit-kicker { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ch-direct); margin: 0 0 10px; }
   .fazit-box p.fazit-text { font-size: 16px; font-weight: 600; color: var(--text-primary); margin: 0; line-height: 1.5; }
+  .fazit-box ul.fazit-list { margin: 0; padding-left: 18px; }
+  .fazit-box ul.fazit-list li { font-size: 14.5px; font-weight: 600; color: var(--text-primary); line-height: 1.5; margin-bottom: 8px; }
+  .fazit-box ul.fazit-list li:last-child { margin-bottom: 0; }
+
+  .info-note { display: flex; align-items: flex-start; gap: 12px; background: rgba(42,120,214,0.06); border: 1px solid rgba(42,120,214,0.25); border-radius: 10px; padding: 16px 20px; }
+  .info-note svg { flex-shrink: 0; margin-top: 1px; }
+  .info-note p { margin: 0; font-size: 14.5px; font-weight: 600; color: var(--text-primary); line-height: 1.5; }
 
   /* ---------- FF3 path summary box ---------- */
   .path-summary { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 24px 28px 28px; margin-top: 8px; }
@@ -552,6 +559,24 @@
         <div class="bar-row"><div class="bar-label">Email</div><div class="bar-track"><div class="bar-fill" style="width:0.8%;background:var(--ch-email)"></div></div><div class="bar-value">2.960,16&nbsp;$</div></div>
         <div class="bar-row"><div class="bar-label">Organic Shopping</div><div class="bar-track"><div class="bar-fill" style="width:0.3%;background:var(--ch-shopping)"></div></div><div class="bar-value">1.315,45&nbsp;$</div></div>
         <div class="bar-row"><div class="bar-label">Organic Video</div><div class="bar-track"><div class="bar-fill" style="width:0.03%;background:var(--ch-other)"></div></div><div class="bar-value">100,94&nbsp;$</div></div>
+
+        <div class="fazit-box" style="margin-top:28px;">
+          <p class="fazit-kicker">Fazit</p>
+          <ul class="fazit-list">
+            <li>Direct dominiert die Gewinnung neuer Nutzer deutlich, aufgrund des hohen Volumens und dem höchsten absoluten Umsatz.</li>
+            <li>Andere Kanäle liefern jedoch eine bessere Key Event Rate: Ein größerer Anteil der Nutzer führt also zu Key Events.</li>
+            <li>Kanäle wie Shopping oder Email erzielen bei geringer Nutzerzahl verhältnismäßig hohen Umsatz.</li>
+          </ul>
+        </div>
+
+        <div class="info-note" style="margin-top:16px;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="10" cy="10" r="9" stroke="var(--ch-direct)" stroke-width="1.6"/>
+            <circle cx="10" cy="6.2" r="1.1" fill="var(--ch-direct)"/>
+            <rect x="9.1" y="8.8" width="1.8" height="6" rx="0.9" fill="var(--ch-direct)"/>
+          </svg>
+          <p>Hohe Reichweite bedeutet nicht zwangsläufig hohe Nutzerqualität.</p>
+        </div>
       </div>
     </section>
 
@@ -560,7 +585,7 @@
 
       <div class="chart-block">
         <p class="chart-title">Reichweite und Nutzungsintensität nach Akquisitionskanal</p>
-        <p class="chart-caption">GA4-Sitzungsdaten des Google Merchandise Store, 01.04.–30.06.2026 (Quelle: Abbildung 17). Nutzungsintensität = Engagement Rate im Verhältnis zum Gesamtwert (37,2&nbsp;%). Ein Kanal gilt als nutzungsintensiv, wenn seine Engagement Rate über 37,2&nbsp;% liegt und mindestens 2 von 3 Kennzahlen (Engagement-Zeit &gt; 42&nbsp;Sek., Events/Sitzung &gt; 11,35, Views/Sitzung &gt; 3,02) über dem Gesamtdurchschnitt liegen; hohe Reichweite ab ≥ 5&nbsp;% aller Sitzungen. Punktgröße = Anzahl der Sitzungen. Kanäle mit weniger als 100 Sitzungen sowie Unassigned wurden nicht eingeordnet; Email bleibt wegen geringer Fallzahl unberücksichtigt.</p>
+        <p class="chart-caption">GA4-Sitzungsdaten des Google Merchandise Store, Quelle: Abbildung 17). Nutzungsintensität = Engagement Rate im Verhältnis zum Gesamtwert (37,2&nbsp;%). Ein Kanal gilt als nutzungsintensiv, wenn seine Engagement Rate über 37,2&nbsp;% liegt und mindestens 2 von 3 Kennzahlen (Engagement-Zeit &gt; 42&nbsp;Sek., Events/Sitzung &gt; 11,35, Views/Sitzung &gt; 3,02) über dem Gesamtdurchschnitt liegen; hohe Reichweite ab ≥ 5&nbsp;% aller Sitzungen. Punktgröße = Anzahl der Sitzungen. Kanäle mit weniger als 100 Sitzungen sowie Unassigned wurden nicht eingeordnet; Email bleibt wegen geringer Fallzahl unberücksichtigt.</p>
 
         <svg class="scatter-svg" viewBox="0 0 680 410" role="img" aria-label="Streudiagramm: Reichweite und Nutzungsintensität nach Kanal">
           <rect x="70" y="30" width="580" height="320" fill="var(--surface-1)" stroke="var(--border)"/>
