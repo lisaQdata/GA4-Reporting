@@ -235,6 +235,7 @@
   /* ---------- FF3 flow diagram ---------- */
   .flow-svg { width: 100%; max-width: 830px; height: auto; display: block; }
   .flow-scroll { overflow-x: auto; }
+  .mindmap-svg { width: 100%; max-width: 820px; height: auto; display: block; }
 
   /* ---------- data tables (Rohdaten) ---------- */
   .data-block { margin-bottom: 44px; }
@@ -621,70 +622,6 @@
     <section class="block" id="ff3-navigation">
       <h2 class="section-title">Forschungsfrage 3: Einstiegsseiten und Navigationspfade</h2>
 
-      <div class="chart-block">
-        <p class="chart-title">Navigationspfade: Organic Traffic</p>
-        <p class="chart-caption">GA4-Pfadexploration, Segment Organic Traffic, 01.04.–30.06.2026. Je Schritt die 4 stärksten Seitenpfade, Rest als „Weitere" gebündelt (Schritt 1 berechnet, Schritt 2/3 aus GA4 „+N More"). Bandbreite = Nutzerzahl. Blockhöhe ab Schritt 2 mit sichtbarer Mindestbreite für sehr kleine Werte. Die Bänder zwischen Schritt 1→2 und 2→3 zeigen die aggregierte Weiterbewegung, nicht einzelne Seite-zu-Seite-Verläufe, da GA4 dafür keine Einzelwerte ausweist.</p>
-        <div class="flow-scroll">
-          <svg class="flow-svg" viewBox="0 0 830 230" role="img" aria-label="Flussdiagramm: Navigationspfade Organic Traffic">
-            <path d="M100.0,30.00 C150.0,30.00 150.0,30.00 200.0,30.00 L200.0,114.76 C150.0,114.76 150.0,114.76 100.0,114.76 Z" fill="rgba(42,120,214,0.16)"/>
-            <path d="M100.0,114.76 C150.0,114.76 150.0,122.76 200.0,122.76 L200.0,180.16 C150.0,180.16 150.0,172.16 100.0,172.16 Z" fill="rgba(42,120,214,0.16)"/>
-            <path d="M100.0,172.16 C150.0,172.16 150.0,188.16 200.0,188.16 L200.0,216.00 C150.0,216.00 150.0,200.00 100.0,200.00 Z" fill="rgba(42,120,214,0.08)"/>
-            <path d="M260.0,30.00 C325.0,30.00 325.0,30.00 390.0,30.00 L390.0,213.39 C325.0,213.39 325.0,216.00 260.0,216.00 Z" fill="rgba(137,135,129,0.12)"/>
-            <path d="M450.0,30.00 C525.0,30.00 525.0,30.00 600.0,30.00 L600.0,171.40 C525.0,171.40 525.0,213.39 450.0,213.39 Z" fill="rgba(137,135,129,0.12)"/>
-
-            <text x="70.0" y="18" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">STARTPUNKT</text>
-            <rect x="40.0" y="30.00" width="60" height="170.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="108" y="111.00" font-size="10.5" font-weight="600" fill="var(--text-primary)">session_start</text>
-            <text x="108" y="124.00" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">44.407</text>
-
-            <text x="230.0" y="18" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">SCHRITT 1</text>
-            <rect x="200.0" y="30.00" width="60" height="84.76" rx="2" fill="var(--ch-direct)"/>
-            <text x="268" y="68.38" font-size="10.5" font-weight="600" fill="var(--text-primary)">/</text>
-            <text x="268" y="81.38" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">22.141</text>
-            <rect x="200.0" y="122.76" width="60" height="57.40" rx="2" fill="var(--ch-direct)"/>
-            <text x="268" y="147.46" font-size="10.5" font-weight="600" fill="var(--text-primary)">(not set)</text>
-            <text x="268" y="160.46" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">14.993</text>
-            <rect x="200.0" y="188.16" width="60" height="27.84" rx="2" fill="#b7d3f6"/>
-            <text x="268" y="198.08" font-size="10.5" font-weight="600" fill="var(--text-primary)">Weitere</text>
-            <text x="268" y="211.08" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">7.273</text>
-
-            <text x="420.0" y="18" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">SCHRITT 2</text>
-            <rect x="390.0" y="30.00" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="458" y="28.00" font-size="10.5" font-weight="600" fill="var(--text-primary)">/shop/apparel</text>
-            <text x="458" y="41.00" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">1.797</text>
-            <rect x="390.0" y="54.00" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="458" y="52.00" font-size="10.5" font-weight="600" fill="var(--text-primary)">/shop/new</text>
-            <text x="458" y="65.00" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">1.231</text>
-            <rect x="390.0" y="78.00" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="458" y="76.00" font-size="10.5" font-weight="600" fill="var(--text-primary)">/shop/apparel/mens</text>
-            <text x="458" y="89.00" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">837</text>
-            <rect x="390.0" y="102.00" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="458" y="100.00" font-size="10.5" font-weight="600" fill="var(--text-primary)">/checkout</text>
-            <text x="458" y="113.00" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">809</text>
-            <rect x="390.0" y="126.00" width="60" height="87.39" rx="2" fill="#b7d3f6"/>
-            <text x="458" y="165.70" font-size="10.5" font-weight="600" fill="var(--text-primary)">Weitere</text>
-            <text x="458" y="178.70" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">22.828</text>
-
-            <text x="630.0" y="18" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">SCHRITT 3</text>
-            <rect x="600.0" y="30.00" width="60" height="57.40" rx="2" fill="var(--ch-direct)"/>
-            <text x="668" y="54.70" font-size="10.5" font-weight="600" fill="var(--text-primary)">(not set)</text>
-            <text x="668" y="67.70" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">14.993</text>
-            <rect x="600.0" y="95.40" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="668" y="93.40" font-size="10.5" font-weight="600" fill="var(--text-primary)">/</text>
-            <text x="668" y="106.40" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">309</text>
-            <rect x="600.0" y="119.40" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="668" y="117.40" font-size="10.5" font-weight="600" fill="var(--text-primary)">/product/shop-by-brand/…</text>
-            <text x="668" y="130.40" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">75</text>
-            <rect x="600.0" y="143.40" width="60" height="4.00" rx="2" fill="var(--ch-direct)"/>
-            <text x="668" y="141.40" font-size="10.5" font-weight="600" fill="var(--text-primary)">/shop/apparel</text>
-            <text x="668" y="154.40" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">63</text>
-            <rect x="600.0" y="167.40" width="60" height="4.00" rx="2" fill="#b7d3f6"/>
-            <text x="668" y="165.40" font-size="10.5" font-weight="600" fill="var(--text-primary)">Weitere</text>
-            <text x="668" y="178.40" font-size="10.5" fill="var(--text-secondary)" font-variant-numeric="tabular-nums">468</text>
-          </svg>
-        </div>
-      </div>
-
       <div class="data-block">
         <h3>Abbildung 19 — Landingpages nach Kanal: Direct</h3>
         <p class="data-source">Quelle: GA4 explorative Analyse. Seitentiefe: „/“ und „(not set)“ = 0, je weiteres Pfadsegment +1. Top&nbsp;10 nach Sessions, /shop-Unterseiten nach Kategorie gruppiert (analog Abbildung 20) — hier hat jede Kategorie nur eine Unterseite.</p>
@@ -734,6 +671,92 @@
               <tr><td style="text-align:left">/shop/new</td><td>2</td><td>1.316</td></tr>
             </tbody>
           </table>
+        </div>
+      </div>
+
+      <div class="chart-block">
+        <p class="chart-title">Navigationspfade: Organic Traffic</p>
+        <p class="chart-caption">GA4-Pfadexploration, Segment Organic Traffic, 01.04.–30.06.2026. Je Schritt die 4 stärksten Seitenpfade, Rest als „Weitere" gebündelt (Schritt 1 berechnet, Schritt 2/3 aus GA4 „+N More"). Zahl auf der Verbindung = Sitzungen des Zielkastens, Linienfarbe nach Stärke im jeweiligen Schritt abgestuft (dunkler = mehr Sitzungen). Ab Schritt 1→2 laufen die Linien aus einem gemeinsamen Bündel, da GA4 keine Seite-zu-Seite-Einzelwerte ausweist.</p>
+        <div class="flow-scroll">
+          <svg class="mindmap-svg" viewBox="0 0 820 300" role="img" aria-label="Mind-Map: Navigationspfade Organic Traffic">
+            <path d="M170,153.0 C205.0,153.0 205.0,105.0 240,105.0" fill="none" stroke="#154b91" stroke-width="2.4"/>
+            <rect x="181.0" y="120.0" width="48" height="16" fill="var(--page-plane)"/>
+            <text x="205.0" y="132.5" font-size="10" font-weight="600" fill="#154b91" text-anchor="middle" font-variant-numeric="tabular-nums">22.141</text>
+            <path d="M170,153.0 C205.0,153.0 205.0,153.0 240,153.0" fill="none" stroke="#6089bc" stroke-width="2.4"/>
+            <rect x="181.0" y="144.0" width="48" height="16" fill="var(--page-plane)"/>
+            <text x="205.0" y="156.5" font-size="10" font-weight="600" fill="#6089bc" text-anchor="middle" font-variant-numeric="tabular-nums">14.993</text>
+            <path d="M170,153.0 C205.0,153.0 205.0,201.0 240,201.0" fill="none" stroke="#b1cbeb" stroke-width="2.4"/>
+            <rect x="181.0" y="168.0" width="48" height="16" fill="var(--page-plane)"/>
+            <text x="205.0" y="180.5" font-size="10" font-weight="600" fill="#b1cbeb" text-anchor="middle" font-variant-numeric="tabular-nums">7.273</text>
+
+            <path d="M380,153.0 C415.0,153.0 415.0,57.0 450,57.0" fill="none" stroke="#aac6e7" stroke-width="2.4"/>
+            <rect x="393.0" y="96.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="415.0" y="108.5" font-size="10" font-weight="600" fill="#aac6e7" text-anchor="middle" font-variant-numeric="tabular-nums">1.797</text>
+            <path d="M380,153.0 C415.0,153.0 415.0,105.0 450,105.0" fill="none" stroke="#aec9e9" stroke-width="2.4"/>
+            <rect x="393.0" y="120.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="415.0" y="132.5" font-size="10" font-weight="600" fill="#aec9e9" text-anchor="middle" font-variant-numeric="tabular-nums">1.231</text>
+            <path d="M380,153.0 C415.0,153.0 415.0,153.0 450,153.0" fill="none" stroke="#b1cbeb" stroke-width="2.4"/>
+            <rect x="393.0" y="144.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="415.0" y="156.5" font-size="10" font-weight="600" fill="#b1cbeb" text-anchor="middle" font-variant-numeric="tabular-nums">837</text>
+            <path d="M380,153.0 C415.0,153.0 415.0,201.0 450,201.0" fill="none" stroke="#b1cbeb" stroke-width="2.4"/>
+            <rect x="393.0" y="168.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="415.0" y="180.5" font-size="10" font-weight="600" fill="#b1cbeb" text-anchor="middle" font-variant-numeric="tabular-nums">809</text>
+            <path d="M380,153.0 C415.0,153.0 415.0,249.0 450,249.0" fill="none" stroke="#154b91" stroke-width="2.4"/>
+            <rect x="393.0" y="192.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="415.0" y="204.5" font-size="10" font-weight="600" fill="#154b91" text-anchor="middle" font-variant-numeric="tabular-nums">22.828</text>
+
+            <path d="M590,153.0 C625.0,153.0 625.0,57.0 660,57.0" fill="none" stroke="#154b91" stroke-width="2.4"/>
+            <rect x="603.0" y="96.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="625.0" y="108.5" font-size="10" font-weight="600" fill="#154b91" text-anchor="middle" font-variant-numeric="tabular-nums">14.993</text>
+            <path d="M590,153.0 C625.0,153.0 625.0,105.0 660,105.0" fill="none" stroke="#afc9ea" stroke-width="2.4"/>
+            <rect x="603.0" y="120.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="625.0" y="132.5" font-size="10" font-weight="600" fill="#afc9ea" text-anchor="middle" font-variant-numeric="tabular-nums">309</text>
+            <path d="M590,153.0 C625.0,153.0 625.0,153.0 660,153.0" fill="none" stroke="#b1cbeb" stroke-width="2.4"/>
+            <rect x="603.0" y="144.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="625.0" y="156.5" font-size="10" font-weight="600" fill="#b1cbeb" text-anchor="middle" font-variant-numeric="tabular-nums">75</text>
+            <path d="M590,153.0 C625.0,153.0 625.0,201.0 660,201.0" fill="none" stroke="#b1cbeb" stroke-width="2.4"/>
+            <rect x="603.0" y="168.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="625.0" y="180.5" font-size="10" font-weight="600" fill="#b1cbeb" text-anchor="middle" font-variant-numeric="tabular-nums">63</text>
+            <path d="M590,153.0 C625.0,153.0 625.0,249.0 660,249.0" fill="none" stroke="#adc8e9" stroke-width="2.4"/>
+            <rect x="603.0" y="192.0" width="44" height="16" fill="var(--page-plane)"/>
+            <text x="625.0" y="204.5" font-size="10" font-weight="600" fill="#adc8e9" text-anchor="middle" font-variant-numeric="tabular-nums">468</text>
+
+            <text x="100.0" y="20" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">STARTPUNKT</text>
+            <rect x="30.0" y="136.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="100.0" y="156.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">session_start</text>
+
+            <text x="310.0" y="20" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">SCHRITT 1</text>
+            <rect x="240.0" y="88.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="310.0" y="108.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/</text>
+            <rect x="240.0" y="136.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="310.0" y="156.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">(not set)</text>
+            <rect x="240.0" y="184.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--baseline)" stroke-width="1.4"/>
+            <text x="310.0" y="204.50" font-size="10.5" font-weight="600" fill="var(--text-muted)" text-anchor="middle">Weitere</text>
+
+            <text x="520.0" y="20" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">SCHRITT 2</text>
+            <rect x="450.0" y="40.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="520.0" y="60.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/shop/apparel</text>
+            <rect x="450.0" y="88.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="520.0" y="108.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/shop/new</text>
+            <rect x="450.0" y="136.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="520.0" y="156.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/shop/apparel/mens</text>
+            <rect x="450.0" y="184.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="520.0" y="204.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/checkout</text>
+            <rect x="450.0" y="232.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--baseline)" stroke-width="1.4"/>
+            <text x="520.0" y="252.50" font-size="10.5" font-weight="600" fill="var(--text-muted)" text-anchor="middle">Weitere</text>
+
+            <text x="730.0" y="20" font-size="11" font-weight="700" fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.02em">SCHRITT 3</text>
+            <rect x="660.0" y="40.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="730.0" y="60.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">(not set)</text>
+            <rect x="660.0" y="88.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="730.0" y="108.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/</text>
+            <rect x="660.0" y="136.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="730.0" y="156.50" font-size="9.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/product/shop-by-brand/…</text>
+            <rect x="660.0" y="184.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
+            <text x="730.0" y="204.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/shop/apparel</text>
+            <rect x="660.0" y="232.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--baseline)" stroke-width="1.4"/>
+            <text x="730.0" y="252.50" font-size="10.5" font-weight="600" fill="var(--text-muted)" text-anchor="middle">Weitere</text>
+          </svg>
         </div>
       </div>
     </section>
