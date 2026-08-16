@@ -643,7 +643,7 @@
 
       <div class="data-block">
         <h3>Abbildung 19 — Landingpages nach Kanal: Direct</h3>
-        <p class="data-source">Quelle: GA4 explorative Analyse. Seitentiefe: „/“ und „(not set)“ = 0, je weiteres Pfadsegment +1. Top&nbsp;10 nach Sessions, /shop-Unterseiten nach Kategorie gruppiert (analog Abbildung 20) — hier hat jede Kategorie nur eine Unterseite.</p>
+        <p class="data-source">Quelle: GA4 explorative Analyse. Analyse der der Seiten, auf denen Benutzer auf dem Google Merch Store einsteigen. Es wurde der technische Seitenpfad verwendet, damit es keine Überschneidungen gibt. Die Startseite "/" und "not set" wurden als Seitentiefe 0 gewertet.</p>
         <div class="table-wrap">
           <table class="data">
             <thead><tr><th>Landingpage</th><th>Seitentiefe</th><th>Sessions</th></tr></thead>
@@ -670,7 +670,7 @@
 
       <div class="data-block">
         <h3>Abbildung 20 — Landingpages nach Kanal: Organic Search</h3>
-        <p class="data-source">Quelle: GA4 explorative Analyse. Seitentiefe: „/“ und „(not set)“ = 0, je weiteres Pfadsegment +1. Top&nbsp;10 nach Sessions, mehrfach auftretende Kategorien (Lifestyle, Apparel, Shop by Brand) aggregiert mit Detailseiten darunter.</p>
+        <p class="data-source">Quelle: GA4 explorative Analyse. Analyse der der Seiten, auf denen Benutzer auf dem Google Merch Store einsteigen. Es wurde der technische Seitenpfad verwendet, damit es keine Überschneidungen gibt. Die Startseite "/" und "not set" wurden als Seitentiefe 0 gewertet.</p>
         <div class="table-wrap">
           <table class="data">
             <thead><tr><th>Landingpage</th><th>Seitentiefe</th><th>Sessions</th></tr></thead>
@@ -689,6 +689,25 @@
               <tr class="detail-row"><td style="text-align:left">/shop/shop-by-brand/android</td><td>3</td><td>1.034</td></tr>
               <tr><td style="text-align:left">/shop/new</td><td>2</td><td>1.316</td></tr>
             </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="data-block">
+        <h3>Sessions nach Seitentiefe</h3>
+        <p class="data-source">Aggregiert aus den Landingpage-Sessions in Abbildung 19 (Direct) und Abbildung 20 (Organic Search) je Seitentiefe. Kategorie-Sammelzeilen werden nicht mitgezählt, da ihre Sessions bereits in den Detailzeilen enthalten sind.</p>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Seitentiefe</th><th>Direct</th><th>Organic Search</th></tr></thead>
+            <tbody>
+              <tr><td style="text-align:left">0</td><td>216.018</td><td>59.965</td></tr>
+              <tr><td style="text-align:left">1</td><td>2.636</td><td>0</td></tr>
+              <tr><td style="text-align:left">2</td><td>10.339</td><td>3.179</td></tr>
+              <tr><td style="text-align:left">3</td><td>1.919</td><td>9.731</td></tr>
+            </tbody>
+            <tfoot>
+              <tr style="font-weight:600"><td style="text-align:left">Gesamt</td><td>230.912</td><td>72.875</td></tr>
+            </tfoot>
           </table>
         </div>
       </div>
@@ -1117,6 +1136,25 @@
             <tr class="detail-row"><td style="text-align:left">/shop/shop-by-brand/android</td><td>3</td><td>1.034</td></tr>
             <tr><td style="text-align:left">/shop/new</td><td>2</td><td>1.316</td></tr>
           </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="data-block">
+      <h3>Sessions nach Seitentiefe</h3>
+      <p class="data-source">Aggregiert aus den Landingpage-Sessions in Abbildung 19 (Direct) und Abbildung 20 (Organic Search) je Seitentiefe. Kategorie-Sammelzeilen werden nicht mitgezählt, da ihre Sessions bereits in den Detailzeilen enthalten sind.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Seitentiefe</th><th>Direct</th><th>Organic Search</th></tr></thead>
+          <tbody>
+            <tr><td style="text-align:left">0</td><td>216.018</td><td>59.965</td></tr>
+            <tr><td style="text-align:left">1</td><td>2.636</td><td>0</td></tr>
+            <tr><td style="text-align:left">2</td><td>10.339</td><td>3.179</td></tr>
+            <tr><td style="text-align:left">3</td><td>1.919</td><td>9.731</td></tr>
+          </tbody>
+          <tfoot>
+            <tr style="font-weight:600"><td style="text-align:left">Gesamt</td><td>230.912</td><td>72.875</td></tr>
+          </tfoot>
         </table>
       </div>
     </div>
