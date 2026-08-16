@@ -237,6 +237,15 @@
   .flow-scroll { overflow-x: auto; }
   .mindmap-svg { width: 100%; max-width: 860px; height: auto; display: block; }
 
+  /* ---------- FF3 path summary box ---------- */
+  .path-summary { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 24px 28px 28px; margin-top: 8px; }
+  .path-summary-intro { text-align: center; font-weight: 700; font-size: 14px; margin: 0 0 22px; color: var(--text-primary); }
+  .path-summary-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; position: relative; }
+  .path-summary-cols::before { content: ""; position: absolute; left: 50%; top: 2px; bottom: 2px; width: 1px; background: var(--border); }
+  .path-summary-col h4 { font-size: 13px; font-weight: 700; margin: 0 0 10px; color: var(--text-primary); }
+  .path-summary-col ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--text-secondary); }
+  .path-summary-col li { margin-bottom: 7px; }
+
   /* ---------- data tables (Rohdaten) ---------- */
   .data-block { margin-bottom: 44px; }
   .data-block h3 { font-size: 16px; margin: 0 0 4px; }
@@ -268,6 +277,9 @@
     .field-grid, .store-compare { grid-template-columns: 1fr; }
     .bar-row { grid-template-columns: 96px 1fr 84px; }
     .pie-layout { flex-direction: column; align-items: stretch; }
+    .path-summary-cols { grid-template-columns: 1fr; row-gap: 20px; }
+    .path-summary-cols::before { display: none; }
+    .path-summary-col:first-child { padding-bottom: 18px; border-bottom: 1px solid var(--border); }
   }
 </style>
 </head>
@@ -863,6 +875,28 @@
             <rect x="660.0" y="232.00" width="140" height="34" rx="6" fill="var(--surface-1)" stroke="var(--ch-direct)" stroke-width="1.4"/>
             <text x="730.0" y="252.50" font-size="10.5" font-weight="600" fill="var(--text-primary)" text-anchor="middle">/shop/apparel/mens</text>
           </svg>
+        </div>
+      </div>
+
+      <div class="path-summary">
+        <p class="path-summary-intro">Häufiger Einstieg über die Startseite unabhängig vom Kanal.</p>
+        <div class="path-summary-cols">
+          <div class="path-summary-col">
+            <h4>Direct Traffic</h4>
+            <ul>
+              <li>Nach Start häufig Kategorieseiten.</li>
+              <li>Navigation überwiegend über mehrere Kategorien und Markenbereiche.</li>
+              <li>Produktseiten eher ab Stufe 3.</li>
+            </ul>
+          </div>
+          <div class="path-summary-col">
+            <h4>Organic Traffic</h4>
+            <ul>
+              <li>Einstieg über tiefere Seiten wie Lifestyle/Bags wahrscheinlicher als bei Direct.</li>
+              <li>Suche und Anzeige führt oft zu Themenseiten.</li>
+              <li>Produktseiten ab Stufe 3 aber häufiger als bei Direct.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
